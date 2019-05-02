@@ -12,6 +12,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 ## Exercise 1.2
 maaret@md-MS-7B78:~$ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+
 maaret@md-MS-7B78:~$ docker ps -a
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 
