@@ -10,50 +10,50 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 
 
 ## Exercise 1.2
-docker images
+docker images  
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 
-docker ps -a
+docker ps -a  
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 
 ## Exercise 1.3
-Command: "basics" 
+Command: "basics"  
 Message: "This is the secret message"
 
 ## Exercise 1.4
-docker run --name clockwork devopsdockeruh/exec_bash_exercise
-docker exec -it clockwork bash
-root@0e146d89faf6:/usr/app#  tail -f ./logs.txt 
+docker run --name clockwork devopsdockeruh/exec_bash_exercise  
+docker exec -it clockwork bash  
+root@0e146d89faf6:/usr/app#  tail -f ./logs.txt   
 
-tai suoraan 
-docker exec -it clockwork tail -f ./logs.txt 
-Secret message is:
-"Docker is easy"
-Thu, 02 May 2019 18:54:28 GMT
-Thu, 02 May 2019 18:54:31 GMT
-Thu, 02 May 2019 18:54:34 GMT
-Thu, 02 May 2019 18:54:37 GMT
-Secret message is:
-"Docker is easy"
-.
-.
-.
+tai suoraan  
+docker exec -it clockwork tail -f ./logs.txt   
+Secret message is:  
+"Docker is easy"  
+Thu, 02 May 2019 18:54:28 GMT  
+Thu, 02 May 2019 18:54:31 GMT  
+Thu, 02 May 2019 18:54:34 GMT  
+Thu, 02 May 2019 18:54:37 GMT  
+Secret message is:  
+"Docker is easy"  
+.  
+.  
+.  
 
-##Exercise 1.5
-docker run -d --name ubu ubuntu:latest sh -c 'while true; do date; sleep 1; done'
-docker exec ubu apt-get update
-docker exec ubu apt-get install -y curl
-docker exec -it ubu bash
-root@6608d65e07ad:/# sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 100; curl http://$website;'
-Input website:
-helsinki.fi
-Searching..
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>301 Moved Permanently</title>
-</head><body>
-<h1>Moved Permanently</h1>
-<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
-</body></html>
+## Exercise 1.5
+docker run -d --name ubu ubuntu:latest sh -c 'while true; do date; sleep 1; done'  
+docker exec ubu apt-get update  
+docker exec ubu apt-get install -y curl  
+docker exec -it ubu bash  
+root@6608d65e07ad:/# sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 100; curl http://$website;'  
+Input website:  
+helsinki.fi  
+Searching..  
+`<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">` 
+`<html><head>`  
+`<title>301 Moved Permanently</title>`  
+`</head><body>`  
+`<h1>Moved Permanently</h1>`  
+`<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>`  
+`</body></html>`  
 root@6608d65e07ad:/# 
 
