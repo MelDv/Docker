@@ -1,11 +1,12 @@
 # Part1
 Docker course, part 1 exercises.
 
+:whale: :whale2: :whale: :whale2: :whale: :whale2: :whale: :whale2: :whale: :whale2: 
 
 ## Exercise 1.1
 
-docker ps -a
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                          NAMES
+docker ps -a  
+CONTAINER ID        IMAGE               COMMAND                  CREATED            STATUS              PORTS                          NAMES  
 5325d2a16513        telegraf            "/entrypoint.sh tele…"   7 minutes ago       Up 7 minutes        8092/udp, 8125/udp, 8094/tcp   focused_meninsky
 
 
