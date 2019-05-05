@@ -58,3 +58,7 @@ Searching..
 `</body></html>`  
 root@6608d65e07ad:/# 
 
+## Exercise 1.6
+docker build -t docker-clock .
+docker run -it docker-clock
+
