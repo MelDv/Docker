@@ -59,6 +59,8 @@ Searching..
 root@6608d65e07ad:/# 
 
 ## Exercise 1.6
-docker build -t docker-clock .
+File Dockerfile is used for this exercise. The file DockerfileLearning was just for studying the material.
+
+docker build -t docker-clock . 
 docker run -it docker-clock
 
